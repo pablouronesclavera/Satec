@@ -1,0 +1,684 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    background: #ffffff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div[title="menu"] {
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 0 solid #000;
+    border-bottom: 1px solid #0000000d;
+    flex-flow: row;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    transition: opacity .2s;
+    display: flex;
+    position: fixed;
+    overflow: visible;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    padding: 1em;
+    font-weight: 400;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+div[title="fullHeader"] {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+div[title="logo"] {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 3em;
+    display: flex
+;
+}
+
+div[title="logo"] a{
+    font-family: Arial, sans-serif;
+    font-size: 0.984em;
+    font-weight: bold;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+}
+
+div[title="logo"] img{
+    flex: none;
+    width: 10.125em;
+    height: 3em;
+    padding-left: 1em;
+}
+
+div[title="spaceMenu"] {
+    width: 2.5em;
+    height: 3em;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menuBar {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    align-items: right;
+    margin-left: 1.5em;
+    position: static;
+    width: 100%;
+    height: 100%;
+    gap: 1em;
+}
+
+div[title="textMenu"] {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: visible;
+    text-align: right;
+    letter-spacing: 0.063em;
+}
+
+div[title="textMenu"] a {
+    text-decoration: none;
+    color: #000;
+}
+div[title="textMenu"] a:hover {
+    color: #66c2c2;
+}
+
+div[title="menuProcess"], div[title="menuBenefits"], div[title="menuFeatures"], div[title="menuAboutUs"] {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    padding: 0.5em 1.5em 0.5em 0em;
+}
+
+div[title="menuFeatures"] {
+    padding-left: 1em;
+}
+
+div[title="menuAboutUs"] {
+    padding-left: 0.75em;
+}
+
+
+div[title="menuProcess"] a[title="menuProcessRel"], div[title="menuBenefits"] a[title="menuBenefitsRel"],
+div[title="menuFeatures"] a[title="menuFeaturesRel"], div[title="menuAboutUs"] a[title="menuAboutUsRel"] {
+    transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+div[title="translate"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+div[title="EsEn"] {
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    font-family: var(--text);
+    color: var(--black);
+    font-size: var(--body-l);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div[title="EsEn"] a{
+    text-decoration: none;
+    color: #000;
+}
+
+div[title="EsEn"] a[name="langES"]{
+    font-weight: bold;
+}
+
+div[title="EsEn"] a[name="langEN"]{
+    font-weight: 400;
+}
+
+div[title="menuContact"] {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    display: flex;
+}
+
+div[title="menuContact2"] {
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+    align-items: center;
+    display: flex;
+}
+
+div[title="menuContact2"] a[title="linkContact"] {
+    border: 1px none var(--untitled-ui--primary600);
+    background-color: var(--primary-01);
+    color: var(--untitled-ui--white);
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 2em;
+    background-color: #83dcd2;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 140%;
+    text-decoration: none;
+    transition: all .3s;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0.625em 1.25em;
+    margin-right: 2em;
+}
+
+div[title="menuContact2"] a[title="linkContact"]:hover {
+    background-color: #7dd1d1;
+}
+
+div[title="menuContact2"] a div {
+    transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    z-index: 1;
+    font-family: var(--text);
+    color: var(--black);
+    font-size: var(--body-l);
+    font-weight: 500;
+    position: relative;
+    inset: auto auto 0% 0%;
+}
+
+div[title="menuContactAbs"] {
+    z-index: 1;
+    font-family: var(--text);
+    color: var(--black);
+    font-size: var(--body-l);
+    position: absolute;
+    inset: 0%;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .menuBar {
+        display: none
+    }
+
+    div[title="menu"] {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    div[title="logo"] {
+        flex-grow: 1;
+    }
+
+    /* Logo siempre visible */
+    div[title="logo"] img {
+        height: 2.5em;
+    }
+
+    /* Estilo del botón hamburguesa */
+    .menu-toggle {
+        font-size: 2em;
+        cursor: pointer;
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        right: 1.25em; /* Mueve el botón a la derecha */
+        transform: translateY(-50%); /* Centra verticalmente */
+    }
+
+    /* Solo mostrar ☰ cuando el menú está cerrado */
+    .menu-toggle .close-menu {
+        display: none;
+    }
+
+    /* Menú móvil oculto por defecto */
+    .mobile-menu {
+        position: fixed;
+        top: 3.75em; /* Justo debajo del header */
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: calc(100vh - 3.75em); /* Ocupa todo el espacio disponible debajo del header */
+        background-color: white;
+        display: none; /* Cambiado de transform a display */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
+        z-index: 999;
+        padding-left: 2em;
+    }
+
+    /* Mostrar el menú cuando tenga la clase "show" */
+    .mobile-menu.show {
+        display: flex; /* Se muestra el menú */
+    }
+
+    /* Lista de enlaces del menú */
+    .menu-links {
+        list-style: none;
+        padding: 0;
+        margin: 1.25em 0;
+        justify-items: left;
+    }
+    .menu-links ul {
+        width: 100%;
+    }
+    .menu-links li {
+        padding: 1em 0;
+    }
+
+    .menu-links li a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 100;
+        color: black;
+        text-align: left;
+        letter-spacing: 0.05em;
+    }
+
+    /* Selector de idioma */
+    .language-switch {
+        display: flex;
+        gap: 0.875em;
+        margin: 2em 0 5em;
+    }
+
+    .language-switch a {
+        text-decoration: none;
+        font-size: 1em;
+        color: gray;
+    }
+
+    .language-switch a.active {
+        font-weight: bold;
+        color: black;
+    }
+
+    /* Botón de contacto */
+    .menu-contact {
+        justify-content: left;
+        width: 100%;
+    }
+
+    .menu-contact a {
+        background-color: #83dcd2;
+        padding: 0.625em 25%;
+        border-radius: 1.875em;
+        color: black;
+        font-size: 1.2em;
+        font-weight: 100;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+    
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em;
+    align-items: center;
+    padding: 1.25em;
+}
+
+div[title="introText"] {
+    padding-right: 1.25em;
+    margin-top: 5em;
+}
+
+div[title="introImage"] img[title="cosecha"] {
+    max-width: 100%;
+    border-radius: 0.5em 0.5em;
+    margin-top: 5em;
+}
+
+div[title="introImage"] img[title="flechaHeader"] {
+    position: absolute;
+    right: 40%;
+    bottom: -5%;
+    width: 15em; /* Ajusta el tamaño */
+    max-width: 100%; /* Asegura responsividad */
+    z-index: 10; /* Para que esté encima del contenido */
+}
+
+header h2 {
+    font-size: 3em;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 110%;
+}
+
+header h3 {
+    font-weight: lighter;
+    font-size: 0.9em;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 110%;
+}
+
+header p {
+    font-size: 0.9em;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 140%; 
+    word-spacing: 0.125em;
+}
+
+h4 {
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: center;
+}
+
+h5 {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+#masinfo {
+    background-color: #e2dec5;
+    padding: 0.625em 1em;
+    border-radius: 1.5em;
+    max-width: 75em;
+    width: 50%;
+    margin: 3em 1.5em 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    padding: 0.5em;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    padding: 0.9375em;
+    border-radius: 0.625em;
+    width: 45%; 
+}
+
+.icon-circle {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    height: 4em;
+}
+
+.icon-circle img {
+    width: 2em;
+    height: 2em;
+}
+
+.info-text {
+    padding-left: 5%;
+}
+
+.info-text h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    color: #333;
+    font-weight: lighter;
+    padding-bottom: 0.4em;
+}
+
+.info-text p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    color: #555;
+    font-weight: bold;
+}
+
+@media (max-width: 48em) {
+    .info-container {
+        flex-direction: column; 
+        gap: 0.9375em;
+    }
+
+    .info-item {
+        width: 100%; 
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    padding: 2em 2em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2em;
+    padding-top: 3em;
+}
+
+.footer-left {
+    text-align: left;
+    max-width: 50%;
+    padding-right: 5%;
+}
+
+.footer-left img {
+    width: 30%;
+    height: auto;
+}
+
+.footer-left p {
+    font-size: 0.8em;
+    line-height: 140%;
+    padding-right: 50%;
+    word-spacing: 0.25em;
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.footer-right h6 {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 0.625em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-right ul li {
+    margin: 0.875em 0;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: #66c2c2;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    padding-top: 2em;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.footer-bottom a {
+    font-size: 0.9em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #66c2c2;
+}
+
+footer h2 {
+    font-size: 10.625em;
+    font-weight: 100;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.05em;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a[title="linkContact"] {
+    text-decoration: none;
+    color: #000000;
+}
+
+a[title="linkContact"]:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cursor-indicator {
+    position: fixed;
+    width: 1.25em;
+    height: 1.25em;
+    background-color: #83dcd2;
+    border-radius: 50%;
+    border: 2px solid black;
+    pointer-events: none;
+    transition: transform 0.05s linear;
+    z-index: 9999;
+}
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 1.875em;
+    right: 1.875em;
+    width: 5em;
+    height: 5em;
+    background-color: #87dcd0; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn img {
+    width: 75%;
+    height: auto; 
+    transform: rotate(150deg);
+}
+
+#scrollToTopBtn:hover {
+    background-color: #6cccbf;
+}
+
+#scrollToTopBtn.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
