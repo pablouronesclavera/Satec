@@ -1,0 +1,201 @@
+section[title="process"] {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 100%;
+}
+
+section[title="process"] h4 {
+    font-weight: lighter;
+}
+
+section[title="process"] h5 {
+    text-align: center;
+    font-size: 2.25em;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 2em;
+    border-bottom: 0.063em solid #2d2b2b;
+    margin: 0;
+}
+
+.process-step {
+    position: relative;
+    border-bottom: 0.063em solid #2d2b2b;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+    transition: all 0.6s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.process-step p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+    padding-top: 0.313em;
+}
+
+.process-sub-step {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding: 1em 0em;
+    width: 100%;
+}
+
+
+div[title="identif"]:hover {
+    background-color: #f1f59533;
+}
+
+div[title="planif"]:hover {
+    background-color: #83dcd14d;
+}
+
+div[title="control"]:hover {
+    background-color: #e2dec580;
+}
+
+div[title="logist"]:hover {
+    background-color: #fcb7af80;
+}
+
+div[title="venta"]:hover {
+    background-color: #53c38633;
+}
+
+.step-header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.step-header h3 {
+    font-size: 1.875em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.step-header p {
+    font-size: 1em;
+    color: #666;
+    margin: 0.625em 0 0 0;
+    text-align: left;
+}
+
+.step-content {
+    display: none;
+    padding-top: 0.5em;
+    opacity: 0;
+    transform: translateY(-0.625em);
+    transition: all 0.3s ease-in-out;
+    animation: slideDown 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.process-step:hover .step-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.step-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 0.625em 0;
+    text-align: center;
+}
+
+.sub-step {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 1em;
+    gap: 1em;
+    max-width: 100%;
+    width: 50%;
+}
+
+.sub-step img {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.938em;
+    object-fit: contain;
+    border-radius: 0.5em;
+    background-color: #ddd8ac;
+}
+
+div[title="identif"]:hover img {
+    background-color: #f1f595;
+}
+
+div[title="planif"]:hover img {
+    background-color: #83dcd1;
+}
+
+div[title="control"]:hover img {
+    background-color: #e2dec5;
+}
+
+div[title="logist"]:hover img {
+    background-color: #fcb7af;
+}
+
+div[title="venta"]:hover img {
+    background-color: #53c386;
+}
+
+.sub-step strong {
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+}
+
+.sub-step p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0.313em 0 0 0;
+    text-align: left;
+}
+
+.step-number {
+    font-size: 1.875em;
+    font-weight: 100;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2em;
+    width: 30%;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(0.313em); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
