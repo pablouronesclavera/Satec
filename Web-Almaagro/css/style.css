@@ -27,7 +27,7 @@ div[title="menu"] {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    padding: 1em;
+    padding: 1rem;
     font-weight: 400;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
@@ -53,14 +53,14 @@ div[title="logo"] {
     justify-content: flex-start;
     align-items: center;
     width: auto;
-    height: 3em;
+    height: 3rem;
     display: flex
 ;
 }
 
 div[title="logo"] a{
     font-family: Arial, sans-serif;
-    font-size: 0.984em;
+    font-size: 0.984rem;
     font-weight: bold;
     color: #4a4a4a;
     display: flex;
@@ -69,14 +69,14 @@ div[title="logo"] a{
 
 div[title="logo"] img{
     flex: none;
-    width: 10.125em;
-    height: 3em;
-    padding-left: 1em;
+    width: 10.125rem;
+    height: 3rem;
+    padding-left: 1rem;
 }
 
-div[title="spaceMenu"] {
-    width: 2.5em;
-    height: 3em;
+div[title="spacremenu"] {
+    width: 2.5rem;
+    height: 3rem;
 }
 
 /* Menú hamburguesa */
@@ -92,11 +92,11 @@ div[title="spaceMenu"] {
     display: flex;
     flex: 1;
     justify-content: right;
-    margin-left: 1.5em;
+    margin-left: 1.5rem;
     position: static;
     width: 100%;
     height: 100%;
-    gap: 1em;
+    gap: 1rem;
 }
 
 div[title="textMenu"] {
@@ -105,7 +105,7 @@ div[title="textMenu"] {
     align-items: center;
     overflow: visible;
     text-align: right;
-    letter-spacing: 0.063em;
+    letter-spacing: 0.063rem;
 }
 
 div[title="textMenu"] a {
@@ -125,21 +125,21 @@ div[title="menuProcess"], div[title="menuBenefits"], div[title="menuFeatures"], 
     justify-content: center;
     align-items: center;
     text-align: right;
-    padding: 0.5em 1.5em 0.5em 0em;
+    padding: 0.5rem 1.5rem 0.5rem 0rem;
 }
 
 div[title="menuFeatures"] {
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 
 div[title="menuAboutUs"] {
-    padding-left: 0.75em;
+    padding-left: 0.75rem;
 }
 
 
 div[title="menuProcess"] a[title="menuProcessRel"], div[title="menuBenefits"] a[title="menuBenefitsRel"],
 div[title="menuFeatures"] a[title="menuFeaturesRel"], div[title="menuAboutUs"] a[title="menuAboutUsRel"] {
-    transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
@@ -147,12 +147,12 @@ div[title="translate"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 div[title="EsEn"] {
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
     font-family: var(--text);
     color: var(--black);
     font-size: var(--body-l);
@@ -184,8 +184,8 @@ div[title="menuContact"] {
 }
 
 div[title="menuContact2"] {
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
     align-items: center;
     display: flex;
 }
@@ -196,12 +196,12 @@ div[title="menuContact2"] a[title="linkContact"] {
     color: var(--untitled-ui--white);
     text-align: center;
     white-space: nowrap;
-    border-radius: 2em;
+    border-radius: 2rem;
     background-color: #83dcd2;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 600;
     line-height: 140%;
     text-decoration: none;
@@ -209,8 +209,8 @@ div[title="menuContact2"] a[title="linkContact"] {
     display: flex;
     position: relative;
     overflow: hidden;
-    padding: 0.625em 1.25em;
-    margin-right: 2em;
+    padding: 0.625rem 1.25rem;
+    margin-right: 2rem;
 }
 
 div[title="menuContact2"] a[title="linkContact"]:hover {
@@ -218,7 +218,7 @@ div[title="menuContact2"] a[title="linkContact"]:hover {
 }
 
 div[title="menuContact2"] a div {
-    transform: translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 0rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     z-index: 1;
     font-family: var(--text);
@@ -251,26 +251,31 @@ div[title="menuContactAbs"] {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
         background-color: white;
         z-index: 1000;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    div[title="fullHeader"] {
+        display: flex;
+        justify-content: space-between;
+    } 
 
     div[title="logo"] {
         flex-grow: 1;
     }
 
-    /* Logo siempre visible */
+    /* Logo sirempre visible */
     div[title="logo"] img {
-        height: 2.5em;
+        height: 2.5rem;
     }
 
     /* Estilo del botón hamburguesa */
     .menu-toggle {
-        font-size: 2em;
+        font-size: 2rem;
         cursor: pointer;
         z-index: 1001;
         display: flex;
@@ -278,8 +283,8 @@ div[title="menuContactAbs"] {
         justify-content: center;
         position: absolute;
         top: 50%;
-        right: 1.25em; /* Mueve el botón a la derecha */
-        transform: translateY(-50%); /* Centra verticalmente */
+        right: 1.25em; 
+        transform: translateY(-50%); 
     }
 
     /* Solo mostrar ☰ cuando el menú está cerrado */
@@ -290,11 +295,11 @@ div[title="menuContactAbs"] {
     /* Menú móvil oculto por defecto */
     .mobile-menu {
         position: fixed;
-        top: 3.75em; /* Justo debajo del header */
+        top: 3.75rem; /* Justo debajo del header */
         left: 0;
         width: 100%;
         max-width: 100%;
-        height: calc(100vh - 3.75em); /* Ocupa todo el espacio disponible debajo del header */
+        height: calc(100vh - 3.75rem); /* Ocupa todo el espacio disponible debajo del header */
         background-color: white;
         display: none; /* Cambiado de transform a display */
         flex-direction: column;
@@ -302,7 +307,7 @@ div[title="menuContactAbs"] {
         justify-content: left;
         text-align: left;
         z-index: 999;
-        padding-left: 2em;
+        padding-left: 2rem;
     }
 
     /* Mostrar el menú cuando tenga la clase "show" */
@@ -314,35 +319,35 @@ div[title="menuContactAbs"] {
     .menu-links {
         list-style: none;
         padding: 0;
-        margin: 1.25em 0;
+        margin: 1.25rem 0;
         justify-items: left;
     }
     .menu-links ul {
         width: 100%;
     }
     .menu-links li {
-        padding: 1em 0;
+        padding: 1rem 0;
     }
 
     .menu-links li a {
         text-decoration: none;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 100;
         color: black;
         text-align: left;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.05rem;
     }
 
     /* Selector de idioma */
     .language-switch {
         display: flex;
-        gap: 0.875em;
-        margin: 2em 0 5em;
+        gap: 0.875rem;
+        margin: 2rem 0 5rem;
     }
 
     .language-switch a {
         text-decoration: none;
-        font-size: 1em;
+        font-size: 1rem;
         color: gray;
     }
 
@@ -359,10 +364,10 @@ div[title="menuContactAbs"] {
 
     .menu-contact a {
         background-color: #83dcd2;
-        padding: 0.625em 25%;
-        border-radius: 1.875em;
+        padding: 0.625rem 25%;
+        border-radius: 1.875rem;
         color: black;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         font-weight: 100;
         text-decoration: none;
         text-align: center;
@@ -375,70 +380,72 @@ div[title="menuContactAbs"] {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.25em;
+    gap: 1.25rem;
     align-items: center;
-    padding: 1.25em;
+    padding: 1.25rem;
 }
 
 div[title="introText"] {
-    padding-right: 1.25em;
-    margin-top: 5em;
+    padding-right: 1.25rem;
+    margin-top: 5rem;
 }
 
 div[title="introImage"] img[title="cosecha"] {
     max-width: 100%;
-    border-radius: 0.5em 0.5em;
-    margin-top: 5em;
+    border-radius: 0.5rem 0.5rem;
+    margin-top: 5rem;
 }
 
 div[title="introImage"] img[title="flechaHeader"] {
     position: absolute;
     right: 40%;
     bottom: -5%;
-    width: 15em; /* Ajusta el tamaño */
+    width: 15rem; /* Ajusta el tamaño */
     max-width: 100%; /* Asegura responsividad */
     z-index: 10; /* Para que esté encima del contenido */
 }
 
 header h2 {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 110%;
 }
 
 header h3 {
     font-weight: lighter;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 110%;
 }
 
 header p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 140%; 
-    word-spacing: 0.125em;
+    word-spacing: 0.125rem;
+    color: #333;
+    font-weight: 100;
 }
 
 h4 {
     font-weight: lighter;
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
 }
 
 h5 {
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
 }
 
 
 #masinfo {
     background-color: #e2dec5;
-    padding: 0.625em 1em;
-    border-radius: 1.5em;
-    max-width: 75em;
+    padding: 0.625rem 1rem;
+    border-radius: 1.5rem;
+    max-width: 75rem;
     width: 50%;
-    margin: 3em 1.5em 6em;
+    margin: 3rem 1.5rem 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,14 +458,14 @@ h5 {
     align-items: center;
     flex-wrap: wrap; 
     width: 100%;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 .info-item {
     display: flex;
     align-items: center;
-    padding: 0.9375em;
-    border-radius: 0.625em;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
     width: 45%; 
 }
 
@@ -468,13 +475,13 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4em;
-    height: 4em;
+    width: 4rem;
+    height: 4rem;
 }
 
 .icon-circle img {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
 }
 
 .info-text {
@@ -483,31 +490,21 @@ h5 {
 
 .info-text h6 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 0;
     color: #333;
     font-weight: lighter;
-    padding-bottom: 0.4em;
+    padding-bottom: 0.4rem;
 }
 
 .info-text p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0;
     color: #555;
     font-weight: bold;
 }
 
-@media (max-width: 48em) {
-    .info-container {
-        flex-direction: column; 
-        gap: 0.9375em;
-    }
-
-    .info-item {
-        width: 100%; 
-    }
-}
 
 
 /* FOOTER */
@@ -515,13 +512,13 @@ h5 {
 footer {
     background-color: #0d0d0d;
     color: #ffffff;
-    padding: 2em 2em 0em;
+    padding: 2rem 2rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
 
 .footer-container {
@@ -529,8 +526,8 @@ footer {
     justify-content: left;
     align-items: flex-start;
     width: 100%;
-    margin-bottom: 2em;
-    padding-top: 3em;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
 }
 
 .footer-left {
@@ -545,10 +542,10 @@ footer {
 }
 
 .footer-left p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     line-height: 140%;
     padding-right: 50%;
-    word-spacing: 0.25em;
+    word-spacing: 0.25rem;
 }
 
 .footer-right {
@@ -556,9 +553,9 @@ footer {
 }
 
 .footer-right h6 {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-bottom: 0.625em;
+    margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: #fff;
 }
@@ -570,12 +567,12 @@ footer {
 }
 
 .footer-right ul li {
-    margin: 0.875em 0;
+    margin: 0.875rem 0;
 }
 
 .footer-right ul li a {
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #ffffff;
     transition: color 0.3s;
 }
@@ -590,16 +587,16 @@ footer {
     align-items: center;
     width: 100%;
     border-top: 1px solid #ffffff;
-    padding-top: 2em;
+    padding-top: 2rem;
 }
 
 .footer-bottom p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin: 0;
 }
 
 .footer-bottom a {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
@@ -609,17 +606,24 @@ footer {
     color: #66c2c2;
 }
 
-footer h2 {
-    font-size: 10.625em;
+div[title="finalTitle"] {
+    width: 100%;
+    text-align: left;
+    justify-content: left;
+
+}
+
+div[title="finalTitle"] h2 {
+    font-size: 10.625rem;
     font-weight: 100;
-    margin-top: 0.25em;
+    margin-top: 0.25rem;
     margin-bottom: 0;
     color: #ffffff;
     text-transform: uppercase;
-    text-align: left;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05rem;
     font-family: 'Work Sans', sans-serif;
 }
+
 
 a[title="linkContact"] {
     text-decoration: none;
@@ -638,8 +642,8 @@ html {
 
 .cursor-indicator {
     position: fixed;
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.25rem;
+    height: 1.25rem;
     background-color: #83dcd2;
     border-radius: 50%;
     border: 2px solid black;
@@ -651,10 +655,10 @@ html {
 
 #scrollToTopBtn {
     position: fixed;
-    bottom: 1.875em;
-    right: 1.875em;
-    width: 5em;
-    height: 5em;
+    bottom: 1.875rem;
+    right: 1.875rem;
+    width: 5rem;
+    height: 5rem;
     background-color: #87dcd0; 
     border-radius: 50%;
     display: flex;

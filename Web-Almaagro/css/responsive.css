@@ -1,0 +1,117 @@
+
+@media (max-width: 991px) {
+    
+    div[title="introImage"] img[title="flechaHeader"] {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    div[title="introImage"] img[title="flechaHeader"] {
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    div[title="features-grid"] {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    section[title="contact"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div[title="contact-grid"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: auto;
+    }
+
+    div[title="image-container"] {
+        display: none;
+    }
+
+    .info-container {
+        flex-direction: column; 
+        gap: 0.9375em;
+    }
+
+    .info-item {
+        width: 100%; 
+    }
+}
+
+
+
+
+@media (max-width: 480px) { 
+    div[title="introImage"] img[title="flechaHeader"] {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    div[title="introImage"] img[title="flechaHeader"] {
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    div[title="benefits-grid"] {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    div[title="features-grid"] {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    section[title="contact"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div[title="contact-grid"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: auto;
+    }
+
+    div[title="image-container"] {
+        display: none;
+    }
+
+    .info-container {
+        flex-direction: column; 
+        gap: 0.9375em;
+    }
+
+    .info-item {
+        width: 100%; 
+    }
+
+}
